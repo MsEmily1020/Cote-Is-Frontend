@@ -1,6 +1,7 @@
 import React from "react";
-import styles from '../css/Style.module.css'; // CSS 모듈을 가져옴
+import '../css/Style.css'; // CSS 모듈을 가져옴
 import { useNavigate } from "react-router-dom";
+import styles from '../css/FirstPage.module.css';
 
 
 function App() {
@@ -22,10 +23,10 @@ function App() {
         <button className={styles['join-button']}>회원가입</button>
         <div className={styles.label}>간편 로그인</div>
         <div className={styles['login-icons']}>
-          <div className={styles['kakao-icon']}><img src="./image/kakao_icon.png" alt="" /></div>
-          <div className={styles['naver-icon']}><img src="./image/naver_icon.png" alt="" /></div>
-          <div className={styles['google-icon']}><img src="./image/google_icon.png" alt="" /></div>
-          <div className={styles['github-icon']}><img src="./image/github_icon.png" alt="" /></div>
+          <div className={styles['kakao-icon']}><img src="./image/kakao_icon.png" alt="" className={styles['login-icon-img']}/></div>
+          <div className={styles['naver-icon']}><img src="./image/naver_icon.png" alt="" className={styles['login-icon-img']}/></div>
+          <div className={styles['google-icon']}><img src="./image/google_icon.png" alt="" className={styles['login-icon-img']}/></div>
+          <div className={styles['github-icon']}><img src="./image/github_icon.png" alt="" className={styles['login-icon-img']}/></div>
         </div>
       </div>
     </div>

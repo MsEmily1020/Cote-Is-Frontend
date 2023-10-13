@@ -80,13 +80,17 @@ body {
     gap: 9vw;
 }
 
-.login-icons > .login-icon {
+.kakao-icon,
+.naver-icon,
+.google-icon,
+.github-icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .kakao-icon {
@@ -105,7 +109,7 @@ body {
     background-color: #1E1E1E;
 }
 
-.login-icon > img {
+.login-icon-img {
     width: 50%;
     height: 50%;
 }
