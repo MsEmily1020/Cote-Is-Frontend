@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+function Main() {
+  return (
+    <div>
+
+    </div>
+  );
+}
+
 function ArticleList() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -44,4 +52,4 @@ function ArticleList() {
   );
 }
 
-export default ArticleList;
+export default Main;
