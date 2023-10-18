@@ -1,0 +1,103 @@
+:root {
+    --main-font: 'Pretendard';
+    --main-color: rgba(97, 35, 156, 1);
+    --black: #1E1E1E;
+    --gray: #878787;
+}
+
+@keyframes pan {
+    100% {
+      background-position: 50% 50%;
+    }
+}
+
+body {
+    background-image: url('../../public/image/bg.svg');
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    color: var(--main-color);
+
+    animation: pan 5s infinite alternate linear;
+} 
+
+.slogans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.joinContainer {
+    background-color: #fff;
+    padding-top: 3vh;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 11vh;
+}
+
+.forms {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.inputContainer,
+.inputContainer > * {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.inputContainer > input {
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--main-color);
+}
+
+.inputContainer > input::placeholder {
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 1rem;
+}
+
+.joinButton {
+    width: 25%;
+    height: 50px;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid;
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.goLogin {
+    color: var(--main-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
