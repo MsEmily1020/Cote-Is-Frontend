@@ -8,8 +8,12 @@ function App() {
 
   const movePage = useNavigate();
 
-  function goLogin(){
+  function goLogin() {
     movePage('/login');
+  }
+
+  function goJoin() {
+    movePage('/join');
   }
 
   return (
@@ -20,7 +24,7 @@ function App() {
       </div>
       <div className={styles.buttons}>
         <button className={styles['login-button']} onClick={goLogin}>로그인</button>
-        <button className={styles['join-button']}>회원가입</button>
+        <button className={styles['join-button']} onClick={goJoin}>회원가입</button>
         <div className={styles.label}>간편 로그인</div>
         <div className={styles['login-icons']}>
           <div className={styles['kakao-icon']}><img src="./image/kakao_icon.png" alt="" className={styles['login-icon-img']}/></div>
