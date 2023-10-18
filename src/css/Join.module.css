@@ -1,4 +1,3 @@
-
 :root {
     --main-font: 'Pretendard';
     --main-color: rgba(97, 35, 156, 1);
@@ -12,7 +11,6 @@
     }
 }
 
-
 body {
     background-image: url('../../public/image/bg.svg');
     background-size: cover;
@@ -22,16 +20,21 @@ body {
 
     animation: pan 5s infinite alternate linear;
 } 
-/* 배경 움직이는 애니메이션 주기 */
 
-.main { 
+.slogans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-.loginContainer {
+.joinContainer {
     background-color: #fff;
     padding-top: 3vh;
     width: 50%;
@@ -42,24 +45,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 11vh;
-}
-
-.slogans {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.slogans > h2 {
-    font-size: 1.2rem;
-    font-weight: 100;
-    letter-spacing: 1rem;
-}
-
-.slogans > h1 {
-    font-size: 2rem;
-    font-weight: 900;
-    letter-spacing: 1rem;
 }
 
 .forms {
@@ -97,7 +82,7 @@ body {
     font-size: 1rem;
 }
 
-.loginButton {
+.joinButton {
     width: 25%;
     height: 50px;
     font-size: 1.2rem;
@@ -109,8 +94,10 @@ body {
     cursor: pointer;
 }
 
-.goJoin {
+.goLogin {
     color: var(--main-color);
     text-decoration: underline;
     cursor: pointer;
 }
+
+

@@ -38,5 +38,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://coteis-env.eba-t4xprjwa.ap-northeast-2.elasticbeanstalk.com"
+  "proxy": "http://coteis-env.eba-t4xprjwa.ap-northeast-2.elasticbeanstalk.com",
+  "devDependencies": {
+    "@iconify/react": "^4.1.1"
+  }
 }

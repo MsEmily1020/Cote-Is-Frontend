@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../css/Login.module.css';
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';  
 
 function Login() {
@@ -16,7 +17,15 @@ function Login() {
     } catch (error) {
       console.error('로그인 실패:', error);
     }
+    
   };
+
+  const movePage = useNavigate();
+
+  function goJoin() {
+    movePage('/join');
+  }
+
   return (
     <div className={styles.main}>
     <div className={styles.loginContainer}>
@@ -24,7 +33,7 @@ function Login() {
         <h1>COTEIS</h1>
       </div>
       <form action="/login" method='POST' className={styles.forms}>
-        <div className={styles['input-container']}>
+        <div className={styles['inputContainer']}>
           <div className={styles['input-label']}>아이디</div>
           <input 
             type="text" 
@@ -34,7 +43,7 @@ function Login() {
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
-        <div className={styles['input-container']}>
+        <div className={styles['inputContainer']}>
           <div className={styles['input-label']}>비밀번호</div>
           <input 
             type="password" 
@@ -50,6 +59,7 @@ function Login() {
           className={styles.loginButton}
           onClick={handleLogin}
         >로그인</button>
+        <div className={styles['goJoin']} onClick={goJoin}>회원이 아니신가요? 회원가입 하기</div>
       </div>
     </div>
   </div>
