@@ -7,7 +7,8 @@ import {
 } from 'react-router-dom';
 import Login from './components/Login';
 import FirstPage from './components/FirstPage';
-import ArticleList from "./components/ArticleList";
+import Main from "./components/Main";
+import Join from "./components/Join";
 
 
 function App() {
@@ -16,8 +17,8 @@ function App() {
       <Routes>
         <Route path={"/"} element={<FirstPage />} />
         <Route path={"/login"} element={<Login />} />
-        <Route path={"/articles"} element={<ArticleList />} />
-      {/* 다른 라우트 설정도 가능 */}
+        <Route path={"/main"} element={<Main />} />
+        <Route path={"/join"} element={<Join />} />
     </Routes>
   </Router>
   );
