@@ -28,26 +28,26 @@ function Login() {
 
   return (
     <div className={styles.main}>
-    <div className={styles.loginContainer}>
+    <div className={styles['login-container']}>
       <div className="slogans">
         <h1>COTEIS</h1>
       </div>
       <form action="/login" method='POST' className={styles.forms}>
-        <div className={styles['inputContainer']}>
+        <div className={styles['input-container']}>
           <div className={styles['input-label']}>아이디</div>
           <input 
             type="text" 
-            className="member_id" 
+            className={styles['input-field']}
             placeholder="아이디를 입력하세요" 
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
-        <div className={styles['inputContainer']}>
+        <div className={styles['input-container']}>
           <div className={styles['input-label']}>비밀번호</div>
           <input 
             type="password" 
-            className={styles['member_pw']} 
+            className={styles['input-field']}
             placeholder="비밀번호를 입력하세요" 
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -56,10 +56,10 @@ function Login() {
       </form>
       <div className={styles.buttons}>
         <button 
-          className={styles.loginButton}
+          className={styles['login-button']}
           onClick={handleLogin}
         >로그인</button>
-        <div className={styles['goJoin']} onClick={goJoin}>회원이 아니신가요? 회원가입 하기</div>
+        <div className={styles['go-join']} onClick={goJoin}>회원이 아니신가요? 회원가입 하기</div>
       </div>
     </div>
   </div>
