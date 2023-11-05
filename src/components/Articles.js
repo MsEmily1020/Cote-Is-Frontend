@@ -24,11 +24,11 @@ function Articles() {
   
   
     return (
-      <div className={styles.articlesContainer}>
+      <div className={styles['articles-container']}>
           {articles.map((article) => (
-            <div className={styles["articleContainer"]}key={article.articleNo}>
-                <div className={styles["articleTitle"]}>{article.title}</div>
-                <div className={styles["articleTestExplain"]}>{article.testExplain}</div>
+            <div className={styles["article-container"]}key={article.articleNo}>
+                <div className={styles["article-title"]}>{article.title}</div>
+                <div className={styles["article-description"]}>{article.description}</div>
             </div>
           ))}
       </div>
