@@ -37,13 +37,13 @@ function Join() {
 
   return (
     <div className={styles.main}>
-      <div className={styles.joinContainer}>
+      <div className={styles['join-container']}>
         <div className="slogans">
           <h1>COTEIS</h1>
         </div>
         <form className={styles.forms}>
-          <div className={styles['inputContainer']}>
-            <div className={styles['inputLabel']}>이름</div>
+          <div className={styles['input-container']}>
+            <div className={styles['input-label']}>이름</div>
             <input
               type="text"
               name="userName"
@@ -52,8 +52,8 @@ function Join() {
               placeholder="이름을 입력하세요"
             />
           </div>
-          <div className={styles['inputContainer']}>
-            <div className={styles['inputLabel']}>아이디</div>
+          <div className={styles['input-container']}>
+            <div className={styles['input-label']}>아이디</div>
             <input
               type="text"
               name="userId"
@@ -62,8 +62,8 @@ function Join() {
               placeholder="아이디를 입력하세요"
             />
           </div>
-          <div className={styles['inputContainer']}>
-            <div className={styles['inputLabel']}>비밀번호</div>
+          <div className={styles['input-container']}>
+            <div className={styles['input-label']}>비밀번호</div>
             <input
               type="password"
               name="userPw"
@@ -72,8 +72,8 @@ function Join() {
               placeholder="비밀번호를 입력하세요"
             />
           </div>
-          <div className={styles['inputContainer']}>
-            <div className={styles['inputLabel']}>이메일</div>
+          <div className={styles['input-container']}>
+            <div className={styles['input-label']}>이메일</div>
             <input
               type="email"
               name="userEmail"
@@ -84,7 +84,7 @@ function Join() {
           </div>
         </form>
         <div className={styles.buttons}>
-          <button className={styles.joinButton} onClick={join}>
+          <button className={styles['join-button']} onClick={join}>
             회원가입
           </button>
           <div className={styles['goLogin']} onClick={goLogin}>
