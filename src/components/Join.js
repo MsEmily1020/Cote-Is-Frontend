@@ -28,7 +28,6 @@ function Join() {
     try {
       const response = await axios.post('/api/users', formData);
       console.log('회원가입 성공', response.data);
-      // 회원가입 성공 후 로그인 페이지로 이동
       goLogin();
     } catch (error) {
       console.error('회원가입 오류', error);
@@ -41,7 +40,7 @@ function Join() {
         <div className="slogans">
           <h1>COTEIS</h1>
         </div>
-        <form className={styles.forms}>
+        <form className={styles['forms']}>
           <div className={styles['input-container']}>
             <div className={styles['input-label']}>이름</div>
             <input
