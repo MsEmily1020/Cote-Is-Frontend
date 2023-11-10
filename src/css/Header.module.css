@@ -25,12 +25,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: var(--black);
 }
 
 .nav-list {
     display: flex;
+    align-items: center;
     gap: 3vw;
     list-style: none;
     color: var(--main-color);
@@ -38,6 +39,7 @@ nav {
 
 .logo {
     font-weight: 900;
+    font-size: 1rem;
 }
 
 .nav-item {
