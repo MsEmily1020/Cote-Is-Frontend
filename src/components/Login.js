@@ -11,7 +11,9 @@ function Login() {
   const handleLogin = async () => {
     try {
       const apiUrl = process.env.REACT_APP_API_URL; 
-      const response = await axios.post(`${apiUrl}/login`, { username, password });
+      const response = await axios.post(`/login`, { 
+        "userId": username, 
+        "userPw": password });
 
       console.log('로그인 성공:', response.data);
     } catch (error) {
@@ -27,7 +29,7 @@ function Login() {
   }
 
   return (
-    <div className={styles.main}>
+    <div className={styles['main']}>
     <div className={styles['login-container']}>
       <div className="slogans">
         <h1>COTEIS</h1>
