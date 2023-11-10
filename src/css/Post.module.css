@@ -1,5 +1,10 @@
+html,
+body {
+    overflow-y: scroll;
+}
+
 .main {
-    width: 100%;
+    width: 100%;    
     height: fit-content;
     overflow-y: scroll;
     display: flex;
@@ -19,7 +24,7 @@
     height: fit-content;
     background-color: var(--white);
     padding: 4vh 20vw 4vh 20vw;
-    overflow-y: visible;
+    overflow-y: scroll;
 }
 
 form,
@@ -43,7 +48,7 @@ form,
     color: var(--black);
 }
 
-input[type="text"] {
+.input-field {
     height: 42px;
     padding: 10px;
     outline: none;
@@ -51,4 +56,14 @@ input[type="text"] {
     border-radius: 4px;
     border-color: var(--gray);
     background-color: var(--white);
+}
+
+.submit-button {
+    width: 50%;
+    align-self: center;
+    height: 60px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: #fff;
+    border: none;
 }
