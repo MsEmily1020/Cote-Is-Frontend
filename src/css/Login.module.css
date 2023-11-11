@@ -31,7 +31,7 @@ body {
     justify-content: flex-end;
 }
 
-.loginContainer {
+.login-container {
     background-color: #fff;
     padding-top: 3vh;
     width: 50%;
@@ -69,13 +69,13 @@ body {
     gap: 36px;
 }
 
-.inputContainer,
-.inputContainer > * {
+.input-container,
+.input-container > * {
     width: 100%;
     font-size: 1.2rem;
 }
 
-.inputContainer > input {
+.input-container > input {
     height: 50px;
     outline: none;
     border: none;
@@ -83,7 +83,7 @@ body {
     border-bottom-color: var(--main-color);
 }
 
-.inputContainer > input::placeholder {
+.input-container > input::placeholder {
     color: var(--gray);
     font-size: 1rem;
 }
@@ -97,7 +97,7 @@ body {
     font-size: 1rem;
 }
 
-.loginButton {
+.login-button {
     width: 25%;
     height: 50px;
     font-size: 1.2rem;
@@ -109,7 +109,7 @@ body {
     cursor: pointer;
 }
 
-.goJoin {
+.go-join {
     color: var(--main-color);
     text-decoration: underline;
     cursor: pointer;
