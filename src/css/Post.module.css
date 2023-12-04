@@ -68,7 +68,6 @@ textarea {
     height: 100px;
 }
 
-
 .input-field {
     height: 42px;
     padding: 10px;
@@ -94,5 +93,20 @@ textarea {
 
 .submit-button:hover {
     background-color: #4e1c7e
+}
+
+.category-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+select {
+    height: 42px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 10px;
 }
 
