@@ -23,7 +23,7 @@ function Articles() {
             });
     }, []);
 
-    const handleArticleClick = (articleNo) => {
+    const handleArticleClick = articleNo => {
         // 클릭한 아티클의 번호를 사용하여 OneArticle로 네비게이션
         navigate(`/articles/${articleNo}`);
     };
