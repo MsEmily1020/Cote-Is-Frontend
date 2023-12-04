@@ -38,6 +38,7 @@
 :root {
     --main-font: 'Pretendard';
     --main-color: rgba(97, 35, 156, 1);
+    --hover-color: #4e1c7e;
     --black: #1E1E1E;
     --gray: #878787;
     --white: #fff;
