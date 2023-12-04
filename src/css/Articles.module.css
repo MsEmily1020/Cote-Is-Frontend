@@ -15,7 +15,8 @@
 
 .articles-container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     flex-wrap: wrap;
     gap: 40px;
     left: 0;
@@ -29,8 +30,8 @@
 }
 
 .article-container  {
-    width: 17vw;
-    height: fit-content;
+    width: 19vw;
+    height: 180px;
     min-width: 279px;
     display: flex;
     padding: 20px;
@@ -58,6 +59,7 @@
 }
 
 .category-container {
+    margin: 20px 0 0 0;
     display: flex;
     width: 90%;
     flex-flow: row wrap;
@@ -66,7 +68,7 @@
 }
 
 .category-item {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--main-color);
     padding: 5px;
     border-radius: 10px;
