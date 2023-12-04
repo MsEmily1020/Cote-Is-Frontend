@@ -40,6 +40,7 @@ nav {
 .logo {
     font-weight: 900;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .nav-item {
