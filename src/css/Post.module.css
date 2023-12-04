@@ -48,6 +48,27 @@ form,
     color: var(--black);
 }
 
+textarea {
+    resize: none;
+}
+
+#desc {
+    height: 82px;
+}
+
+#code {
+    height: 170px;
+}
+
+#codeExplain {
+    height: 100px;
+}
+
+#concept {
+    height: 100px;
+}
+
+
 .input-field {
     height: 42px;
     padding: 10px;
@@ -59,6 +80,8 @@ form,
 }
 
 .submit-button {
+    cursor: pointer;
+    margin: 100px 0;
     width: 50%;
     align-self: center;
     height: 60px;
@@ -66,4 +89,10 @@ form,
     border-radius: 10px;
     color: #fff;
     border: none;
+    transition: 0.2s;
 }
+
+.submit-button:hover {
+    background-color: #4e1c7e
+}
+
