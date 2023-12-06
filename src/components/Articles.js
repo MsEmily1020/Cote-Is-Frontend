@@ -6,21 +6,66 @@ import {Link, useNavigate} from 'react-router-dom';
 function Articles() {
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(true);
+
+    const [algorithms, setAlgorithms] = useState([]);
+    const [languages, setLanguages] = useState([]);
+    const [difficulties, setDifficulties] = useState([]);
+    const [tests, setTests] = useState([]);
+
     const navigate = useNavigate();
 
     useEffect(() => {
-        const apiUrl = '/api/articles';
 
-
-        axios.get(apiUrl)
-            .then((response) => {
+        axios.get('/api/articles')
+            .then(response => {
                 setArticles(response.data);
                 setLoading(false);
             })
-            .catch((error) => {
+            .catch(error => {
                 console.error('API 요청 실패:', error);
                 setLoading(false);
             });
+
+        axios.get('/api/algorithms')
+            .then(response => {
+                setAlgorithms(response.data);
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error('API 요청 실패:', error);
+                setLoading(false);
+            });
+
+        axios.get('/api/languages')
+            .then(response => {
+                setLanguages(response.data);
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error('API 요청 실패:', error);
+                setLoading(false);
+            });
+
+        axios.get('/api/difficulties')
+            .then(response => {
+                setDifficulties(response.data);
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error('API 요청 실패:', error);
+                setLoading(false);
+            });
+
+        axios.get('/api/previoustests')
+            .then(response => {
+                setTests(response.data);
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error('API 요청 실패:', error);
+                setLoading(false);
+            });
+
     }, []);
 
     const handleArticleClick = articleNo => {
@@ -30,13 +75,14 @@ function Articles() {
 
     return (
         <div className={styles['articles-container']}>
-            {articles.map((article) => (
+
+            {articles.map(article => (
                 <div
                     className={styles["article-container"]}
                     key={article.articleNo}
                     onClick={() => handleArticleClick(article.articleNo)}>
                     <div className={styles["article-title"]}>{article.title}</div>
-                    <div className={styles["article-description"]}>{article.testExplain}</div>
+                    {/*<div className={styles["article-description"]}>{article.testExplain}</div>*/}
                     <div className={styles["category-container"]}>
                         <div className={styles["category-item"]}># {article.algorithmNo.algorithmName}</div>
                         <div className={styles["category-item"]}># {article.difficultyNo.difficultyName}</div>
