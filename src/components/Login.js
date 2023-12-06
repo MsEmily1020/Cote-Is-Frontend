@@ -22,7 +22,6 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      console.log(formData);
       const response = await axios.post('/login', formData);
       goMain();
     } catch (error) {
