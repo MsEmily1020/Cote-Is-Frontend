@@ -7,26 +7,19 @@ import styles from '../css/OneArticle.module.css'
 import Header from './Header';
 import Footer from './Footer';
 
-
 function OneArticle() {
     // id 가져오기
     const {article_no} = useParams();
     const [article, setArticle] = useState({});
 
-    console.log('no', article_no)
-
-    useEffect(() => {
-        const fetchArticle = async () => {
-            try {
-                const response = await axios.get(`/api/articles/${article_no}`);
+    useEffect( () => {
+        axios.get(`/api/articles/${article_no}`)
+            .then(response => {
                 setArticle(response.data);
-            } catch (error) {
-                console.error('글 정보를 가져오는 중 에러 발생:', error);
-            }
-        };
+            })
+            .catch(error => null);
 
-        fetchArticle();
-    }, [article_no]);
+    }, []);
 
 
     return (
