@@ -2,7 +2,7 @@
     --main-font: 'Pretendard';
     --main-color: rgba(97, 35, 156, 1);
     --black: #1E1E1E;
-    --gray: #878787;
+    --gray: #b2b2b2;
 }
 
 @keyframes pan {
@@ -100,4 +100,17 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 720px) {
+    .join-container {
+        width: 100%;
+    }
+
+    .forms {
+        width: 80%;
+    }
+
+    .join-button {
+        width: 80%;
+    }
+}
 

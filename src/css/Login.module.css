@@ -3,7 +3,7 @@
     --main-font: 'Pretendard';
     --main-color: rgba(97, 35, 156, 1);
     --black: #1E1E1E;
-    --gray: #878787;
+    --gray: #c1c1c1;
 }
 
 @keyframes pan {
@@ -113,4 +113,18 @@ body {
     color: var(--main-color);
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+    .login-container {
+        width: 100%;
+    }
+
+    .forms {
+        width: 80%;
+    }
+
+    .login-button {
+        width: 80%;
+    }
 }
