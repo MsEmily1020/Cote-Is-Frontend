@@ -63,4 +63,13 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+.content-label {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.content-value {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
 
